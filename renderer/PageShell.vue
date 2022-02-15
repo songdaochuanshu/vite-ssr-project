@@ -1,18 +1,23 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: MiKin
+ * @Date: 2022-02-15 14:59:20
+ * @LastEditors: MiKin
+ * @LastEditTime: 2022-02-15 23:38:25
+ * @FilePath: \vite-ssr-project\renderer\PageShell.vue
+-->
 <template>
   <div class="layout">
-    <div class="navigation">
-      <a href="/" class="logo">
-        <img src="./logo.svg" height="64" width="64" alt="logo" />
-      </a>
-      <Link href="/">Home</Link>
-      <Link href="/about">About</Link>
+    <Sidebar />
+    <div class="content">
+      <slot />
     </div>
-    <div class="content"><slot /></div>
   </div>
 </template>
 
 <script lang="ts" setup>
-import Link from './Link.vue'
+import Sidebar from '../components/Sidebar/index.vue'
 </script>
 
 <style>
@@ -28,10 +33,9 @@ a {
 }
 </style>
 
-<style scoped>
+<style lang="scss" scoped>
 .layout {
   display: flex;
-  max-width: 900px;
   margin: auto;
 }
 .content {
@@ -40,16 +44,11 @@ a {
   padding-bottom: 50px;
   min-height: 100vh;
 }
-.navigation {
-  padding: 20px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: 1.8em;
-}
 .logo {
   margin-top: 20px;
   margin-bottom: 10px;
+  img {
+    border-radius: 50%;
+  }
 }
 </style>

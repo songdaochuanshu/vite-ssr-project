@@ -1,3 +1,12 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: MiKin
+ * @Date: 2022-02-15 14:59:20
+ * @LastEditors: MiKin
+ * @LastEditTime: 2022-02-16 00:21:11
+ * @FilePath: \vite-ssr-project\renderer\_default.page.client.ts
+ */
 import { getPage } from 'vite-plugin-ssr/client'
 import { createApp } from './app'
 import type { PageContext } from './types'

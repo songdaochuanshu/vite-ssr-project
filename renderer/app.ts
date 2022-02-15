@@ -1,3 +1,12 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: MiKin
+ * @Date: 2022-02-15 14:59:20
+ * @LastEditors: MiKin
+ * @LastEditTime: 2022-02-15 18:43:43
+ * @FilePath: \vite-ssr-project\renderer\app.ts
+ */
 import { createSSRApp, defineComponent, h } from 'vue'
 import PageShell from './PageShell.vue'
 import { setPageContext } from './usePageContext'
